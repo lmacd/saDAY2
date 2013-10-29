@@ -12,7 +12,7 @@ $(document).ready(function() {
     var scale= (hi/680);
     
     //should re-sizing be set for phone too?
-    $('#skrollr-body2').css({'font-size':16*scale+'px'});
+    $('#skrollr-body2, #skrollr-body').css({'font-size':16*scale+'px'});
 
     var year1 = $("#wrapper1").attr("title");
     var year2 = $("#wrapper2").attr("title");

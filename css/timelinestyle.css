@@ -61,6 +61,7 @@ p
     background-color:grey;
     top:0;
     z-index:900;
+    border:1px solid black;
 }
 
 #mainMenu
@@ -167,6 +168,12 @@ p
     background: radial-gradient(ellipse at center,  #cccccc 0%,#333333 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#333333',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 
+}
+.menuD:hover
+{
+color:white;
+font-weight:bold;
+cursor:pointer;
 }
 
 #end

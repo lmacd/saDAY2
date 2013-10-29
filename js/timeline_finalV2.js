@@ -17,16 +17,26 @@ $(document).ready(function() {
     $("#top,#topM").click(function() {
         $(window).scrollTo('0%', 1000);
         $('#year').css({'top': 0 + '%'});
-
     });
- 
+    
+    $('.menuD').click(function(){
+        var date= $(this).attr('id');
+        if(date<=2){$(window).scrollTo((hi*1)+'px',1000);}
+        else if(date>2 && date<5){$(window).scrollTo((hi*2)+'px',1000);}
+        else if(date>4 && date<6){$(window).scrollTo((hi*3)+'px',1000);}
+        else if(date>5 && date<7){$(window).scrollTo((hi*4)+'px',1000);}
+        else if(date>6 && date<9){$(window).scrollTo((hi*7)+'px',1000);}
+        else if(date>8 && date<10){$(window).scrollTo((hi*8)+'px',1000);}
+        else if(date>9){$(window).scrollTo((hi*9)+'px',1000);}
+    });
+    
     $(window).scroll(function() {
         var st = $(this).scrollTop();
         if ((st / hi) < 1)
         {
             $('#year').hide();
             $('.date').hide();
-            $('#year').css({'margin-top': 0 + '%'});
+            $('#year').css({'top': 0 + '%'});
 
         }
         
@@ -80,7 +90,7 @@ $(document).ready(function() {
         else if ((st / hi) === 9)
         {
             $('#year').animate({'top': 93.3 + '%'}, 700);
-        }
+        }        
     });
 
     $('#divs').snapscroll();

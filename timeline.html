@@ -27,142 +27,148 @@ and open the template in the editor.
     </head>
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="http://www.thedp.com/"><img src="img/dailypenn.png" style="max-height: 30px;" alt="photo"></a>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="icon-bar"></span>
-          </button>
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand hidden-xs" href="http://www.thedp.com/"><img src="img/dailypenn.png" style="height: 30px;"></a>
+                <a class="navbar-brand visible-xs" href="http://www.thedp.com/"><img src="img/dailypenn.png" style="max-height: 30px; max-width: 80%; float: left"></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style: "float: right;">
+                        <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Content <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-header">In-Print Articles</li>
+                            <li class = "divider"></li>
+                            <li><a href="stories.html">The Stories</a></li>
+                            <li><a href="data.html">The Data</a></li>
+                            <li id="indent"><a href="methods.html">Methodology</a></li>
+                            <li class = "divider"></li>
+                            <li class="nav-header">Online Exclusives</li>
+                            <li class = "divider"></li>
+                            <li><a href="timeline.html">Timeline</a></li>
+                            <li><a href="roundup.html">Ivy+ Roundup</a></li>
+                            <li><a href="forum.html">Discussion Forum</a></li>
+                        </ul>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li> 
+                    </li>    
+            </div><!--/.nav-collapse -->
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#">The Stories <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="stories.html">What is consent? At Penn, it's an open question</a></li>
-                <li><a href="data.html">Poll: Students have low knowledge of sexual violence resources</a></li>
-                <li id="indent"><a href="methods.html">&bull; Poll Methodology</a></li>
-                <li><a href="roundup.html">Around the nation: Rape survivors bring their battles to campus</a></li>
-                <li><a href="reporting-the-crime.html">For sexual violence, numbers don’t tell the whole story</a></li>
-                <li><a href="timeline.html">Timeline of Watershed Events</a></li>
-              </ul>
-            </li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>     
-        </div><!--/.nav-collapse -->
-      </div>
     </div>
 
-
     <div class="visible-xs ">
-        <div id='divs2'>
-            <div id="introM" ><p id="introPM">Colleges across the country have come under scrutiny for their responses to sexual violence, but Penn has been relatively unscathed in recent years. However, a number of incidents over the past 40 years have stirred passions and spurred changes in the way the University addresses sexual violence. The Daily Pennsylvanian has compiled a timeline of watershed moments that have forced the Penn community to face the issue of sexual violence head-on.</p>
-                <p id='directionsM'>Scroll to navigate mobile timeline. For full timeline experience, re-visit while using a computer.</p></div>    
+        <div id="skrollr-body">
+            <div id='divs2'>
+                <div id="introM" ><p id="introPM">Colleges across the country have come under scrutiny for their responses to sexual violence, but Penn has been relatively unscathed in recent years. However, a number of incidents over the past 40 years have stirred passions and spurred changes in the way the University addresses sexual violence. The Daily Pennsylvanian has compiled a timeline of watershed moments that have forced the Penn community to face the issue of sexual violence head-on.</p>
+                    <p id='directionsM'>Scroll to navigate mobile timeline. For full timeline experience, re-visit while using a computer.</p></div>    
 
-            <div class='wrapperM' id='wrapper1M'>
-                <div id="oneM" class="mainDiv" data-top-center="margin-left:0%" data-top-bottom="margin-left:75%">
-                    <div class="spanner1M"></div>
-                    <img class="center" src="http://media.dpn.s3.amazonaws.com/30839_2o.jpg" >
-                    <div class="dateC1"  data-anchor-target="#oneM" data-center-top="margin-left:50%;width:50%;" data-top-top="margin-left:5%;width:90%;"><p class="date2">1973</p></div>
-                    <div class="center1"> <h2 class='headingM'> Sit-in Leads to the Creation of the Penn Women’s Center</h2>
-                        <p class="bp">After a series of rapes rattled campus, a group of women staged a sit-in on then-President Martin Meyerson’s College Hall office in April 1973. They lobbied for increased security, better lighting throughout campus, rape victim advocates and a space for women, among other things.
-                            <br><br>After four days, the protesters won. The University began to make changes to make campus safer, and in October 1973, the Penn Women’s Center opened.</p></div>
+                <div class='wrapperM' id='wrapper1M'>
+                    <div id="oneM" class="mainDiv" data-top-center="margin-left:0%" data-top-bottom="margin-left:75%">
+                        <div class="spanner1M"></div>
+                        <img class="center" src="http://media.dpn.s3.amazonaws.com/30839_2o.jpg" >
+                        <div class="dateC1"  data-anchor-target="#oneM" data-center-top="margin-left:50%;width:50%;" data-top-top="margin-left:5%;width:90%;"><p class="date2">1973</p></div>
+                        <div class="center1"> <h2 class='headingM'> Sit-in Leads to the Creation of the Penn Women’s Center</h2>
+                            <p class="bp">After a series of rapes rattled campus, a group of women staged a sit-in on then-President Martin Meyerson’s College Hall office in April 1973. They lobbied for increased security, better lighting throughout campus, rape victim advocates and a space for women, among other things.
+                                <br><br>After four days, the protesters won. The University began to make changes to make campus safer, and in October 1973, the Penn Women’s Center opened.</p></div>
+                    </div> 
+                </div>
+
+                <div class='wrapperM' id='wrapper2M'>
+                    <div id="twoM" class="mainDiv" data-top-center="margin-left:0%" data-top-bottom="margin-left:-75%">
+                        <div class="spanner2M"></div>
+                        <img class="center" src="http://i1357.photobucket.com/albums/q749/pongassist/frathouse_zps9cd8e5dd.jpg" >
+                        <div class="dateC2" data-anchor-target="#wrapper2M" data-center-top="width:50%;" data-top-top="width:90%;" ><p class="date2">1983</p></div>            
+                        <div class="center2"> <h2 class='headingM'>Gang Rape Ignites Firestorm on Campus</h2>
+                            <p class="bp">In February 1983, an alleged gang rape at the Alpha Tau Omega fraternity house sparked an uproar on campus. A female student said that she was carried upstairs by five or six men and raped. After an investigation, the University revoked ATO’s charter, only to have that ruling challenged in a year-long legal battle. After the courts mandated the University conduct a second investigation, the final punishment for the fraternity was a few months barred from campus — a result that many saw as a mere slap on the wrist. “I’m a little disappointed that the sanctions are not as stringent as I would have liked,” then-President Sheldon Hackney said at the time.</p></div>               
+                    </div>
+                </div>
+
+
+                <div class='wrapperM' id='wrapper3M'>
+                    <div id="threeM"  class="mainDiv" data-top-center="margin-left:0%" data-top-bottom="margin-left:75%">
+                        <div class="spanner1M"></div>
+                        <img class="center"  src="http://media.dpn.s3.amazonaws.com/30843_rapegraffiti89o.jpg" >
+                        <div class="dateC1"  data-anchor-target="#threeM" data-center-top="margin-left:50%;width:50%;" data-top-top="margin-left:5%;width:90%;"><p class="date2">1989</p></div>                
+                        <div class="center1"> <h2 class='headingM'>‘Women’s Army’ Spray Paints Anti-Rape Graffiti </h2>
+                            <p class="bp">The campus tensions came to a head in 1989, when students calling themselves the “Women’s Army” spray-painted graffiti overnight reading “a woman was raped here” in several areas across campus, including in front of ATO.
+                                <br><br>The group’s statement, given anonymously to the DP, stressed the rise of acquaintance rape across campus and said their aim was to “promote dialogue at Penn and to point out that … rape is not acceptable.”</p></div>
+                    </div> 
+                </div>
+
+                <div class='wrapperM' id='wrapper4M'>
+                    <div id="fourM" class="mainDiv" data-top-center="margin-left:0%" data-top-bottom="margin-left:-75%">
+                        <div class="spanner2M"></div>
+                        <img class="center" src="http://media.dpn.s3.amazonaws.com/30850_take_back_nighto.jpg" >
+                        <div class="dateC2"  data-anchor-target="#fourM" data-center-top="width:50%;" data-top-top="width:90%;"><p class="date2"> 1994</p></div>
+                        <div class="center2"> <h2 class='headingM'> 'Take Back the Night' First Held At Penn</h2> 
+                            <p class="bp">Students organized the first Take Back the Night demonstration on campus in 1994, which drew a crowd of over 200 to protest against sexual violence. Students first tried to hold Take Back the Night in 1989, but were unsuccessful due to hecklers. Throughout the 1990s, the event drew large crowds, but also some controversy — critics said the event excluded and antagonized men.</p></div>               
+                    </div>
+                </div>
+
+
+                <div class='wrapperM' id='wrapper5M'>
+                    <div id="fiveM" class="mainDiv" data-top-center="margin-left:0%" data-top-bottom="margin-left:75%">
+                        <div class="spanner1M"></div>
+                        <img class="center" src="http://media.dpn.s3.amazonaws.com/30840_takebackthenight952o.jpg"> 
+                        <div class="dateC1"  data-anchor-target="#fiveM" data-center-top="margin-left:50%;width:50%;" data-top-top="margin-left:5%;width:90%;" ><p class="date2">1995</p></div>
+                        <div class="center1"> <h2 class='headingM'>Man Apologizes for Rape at 'Take Back the Night'</h2> 
+                            <p class="bp">During the “speak-out” portion of Take Back the Night — where victims of sexual violence tell their stories — a man went up to the microphone to apologize for raping someone. Organizers condemned the action, calling it a misuse of the event and traumatizing for women trying to heal after being sexually assaulted. The event sparked several years of debate over how involved men should be at Take Back the Night.</p></div>
+                    </div>
+                </div>
+
+                <div class='wrapperM' id='wrapper6M'>
+                    <div id="sixM" class="mainDiv" data-top-center="margin-left:0%" data-top-bottom="margin-left:-75%">
+                        <div class="spanner2M"></div>
+                        <img class="center" src="http://media.dpn.s3.amazonaws.com/30848_april_1997_front_bwo.jpg" >
+                        <div class="dateC2"  data-anchor-target="#sixM" data-center-top="width:50%;" data-top-top="width:90%;"><p class="date2"> 1997</p></div>
+                        <div class="center2"> <h2 class='headingM'>Penn Sued Over Its Handling of Campus Rape</h2> 
+                            <p class="bp">In 1997, a former student sued Penn for allegedly covering up her rape three years earlier. The suit, which was settled out of court, claimed that she was raped in what is now called Harrison College House and that Penn Police did not provide her proper support. She also claimed that the University did not include the rape in the crime statistics it reported to the police and federal government — the 1994 crimes report said there were no rapes on campus that year.
+                                <br><br>However, a 1994 article in the Daily Pennsylvanian reported that a rape had occurred on the day the student claimed she was raped, even quoting Penn police officials referencing the incident. A later, unrelated Department of Education investigation faulted the University for not including a rape in its 1994 annual statistics.</p></div>               
+                    </div>
+                </div>
+
+                <div class='wrapperM' id='wrapper7M'>
+                    <div id="sevenM" class="mainDiv" data-top-center="margin-left:0%" data-top-bottom="margin-left:75%">
+                        <div class="spanner1M"></div>
+                        <img class="center"  src="http://media.dpn.s3.amazonaws.com/30849_tracy_macintosh_frontpage_bwo.jpg" >
+                        <div class="dateC1" data-anchor-target="#sevenM" data-center-top="margin-left:50%;width:50%;" data-top-top="margin-left:5%;width:90%;" ><p class="date2">2002</p></div>
+                        <div class="center1"> <h2 class='headingM'>Penn Professor Allegedly Rapes Woman in His Office</h2> 
+                            <p class="bp">Former neurosurgery professor Tracy McIntosh was sentenced to three and a half to seven years in prison in February 2008 for the sexual assault of his college roommate’s niece in his University office.
+                                <br><br>According to a Daily Pennsylvanian article, McIntosh took the then-23 year old woman out to several bars around campus in September 2002. After she began vomiting, the article said, he took her back to his office in Hayden Hall and had sex with her. She filed a complaint with the University two months later and alerted the police. He was charged with rape in May 2003.
+                                <br><br>The victim also filed suit with the University, claiming that McIntosh’s colleagues knew he had a history of using his position to harass women and that the University had hindered the investigation. The suit reached a confidential, out-of-court settlement.</p></div>
+                    </div> 
+                </div>
+                <div class='wrapperM' id='wrapper8M'>
+                    <div id="eightM" class="mainDiv" data-top-center="margin-left:0%" data-top-bottom="margin-left:-75%">
+                        <div class="spanner2M"></div>
+                        <img class="center"  src="http://i1357.photobucket.com/albums/q749/pongassist/stringof_zps64789a00.jpg" >
+                        <div class="dateC2" data-anchor-target="#eightM" data-center-top="width:50%;" data-top-top="width:90%;"><p class="date2"> 2009</p></div>
+                        <div class="center2"> <h2 class='headingM'>String of Rapes</h2> 
+                            <p class="bp">In fall 2009, a string of rapes reported on campus, including two in fraternity houses, forced the topic back to forefront of campus dialogue. Twice during that semester, student anti-violence groups hosted “speak-outs” at the Penn Women’s Center to encourage discussion about the incidents. 
+                                <br><br>“We really have a tragic opportunity with what’s happening to create some kind of momentum to make this a campus-wide issue that’s taken seriously,” Jason Pollack, then-College senior and president of all-male violence prevention group One in Four, said, according to a DP article about the speak-out.</p></div>               
+                    </div>
+                </div>
+
+                <div class='wrapperM' id='wrapper9M'>
+                    <div id="nineM" class="mainDiv">
+                        <div class="spanner1M"></div>
+                        <img class="center" src="http://i1357.photobucket.com/albums/q749/pongassist/PennWomensCenterFileName-DSC_0080NEFFileSize-22MB2327618bytesDateTaken-ThuOct220033-40-23AMImSaturationControl-N-AToneCompen_zpsb311d275.jpg" >
+                        <div class="dateC1"  data-anchor-target="#nineM" data-center-top="margin-left:50%;width:50%;" data-top-top="margin-left:5%;width:90%;" ><p class="date2">2013</p></div>
+                        <div class="center1"> <h2 class='headingM'>40th Anniversary of the Women's Center</h2>
+                            <p class="bp">This year, the Penn Women’s Center celebrates the 40th anniversary of its founding. While it initially did not have a building to itself, since 1996 it has occupied a prominent house on Locust Walk.
+                                <br><br>“We’re doing interviews right now as part of our 40th celebrations, and over and over our interviewees describe PWC as ‘home,’” Women’s Center Director Felicity Paxton said. “That’s really crucial. Advancing gender equity is important, serious and often hard work; it is vital for us to create a space that is welcoming and nurturing.”</p></div>
+                    </div> 
+                </div>
+
+                <div id="endM" ><div id='topM'>RETURN TO TOP</div>
                 </div> 
             </div>
-
-            <div class='wrapperM' id='wrapper2M'>
-                <div id="twoM" class="mainDiv" data-top-center="margin-left:0%" data-top-bottom="margin-left:-75%">
-                    <div class="spanner2M"></div>
-                    <img class="center" src="http://i1357.photobucket.com/albums/q749/pongassist/frathouse_zps9cd8e5dd.jpg" >
-                    <div class="dateC2" data-anchor-target="#wrapper2M" data-center-top="width:50%;" data-top-top="width:90%;" ><p class="date2">1983</p></div>            
-                    <div class="center2"> <h2 class='headingM'>Gang Rape Ignites Firestorm on Campus</h2>
-                        <p class="bp">In February 1983, an alleged gang rape at the Alpha Tau Omega fraternity house sparked an uproar on campus. A female student said that she was carried upstairs by five or six men and raped. After an investigation, the University revoked ATO’s charter, only to have that ruling challenged in a year-long legal battle. After the courts mandated the University conduct a second investigation, the final punishment for the fraternity was a few months barred from campus — a result that many saw as a mere slap on the wrist. “I’m a little disappointed that the sanctions are not as stringent as I would have liked,” then-President Sheldon Hackney said at the time.</p></div>               
-                </div>
-            </div>
-
-
-            <div class='wrapperM' id='wrapper3M'>
-                <div id="threeM"  class="mainDiv" data-top-center="margin-left:0%" data-top-bottom="margin-left:75%">
-                    <div class="spanner1M"></div>
-                    <img class="center"  src="http://media.dpn.s3.amazonaws.com/30843_rapegraffiti89o.jpg" >
-                    <div class="dateC1"  data-anchor-target="#threeM" data-center-top="margin-left:50%;width:50%;" data-top-top="margin-left:5%;width:90%;"><p class="date2">1989</p></div>                
-                    <div class="center1"> <h2 class='headingM'>‘Women’s Army’ Spray Paints Anti-Rape Graffiti </h2>
-                        <p class="bp">The campus tensions came to a head in 1989, when students calling themselves the “Women’s Army” spray-painted graffiti overnight reading “a woman was raped here” in several areas across campus, including in front of ATO.
-                            <br><br>The group’s statement, given anonymously to the DP, stressed the rise of acquaintance rape across campus and said their aim was to “promote dialogue at Penn and to point out that … rape is not acceptable.”</p></div>
-                </div> 
-            </div>
-
-            <div class='wrapperM' id='wrapper4M'>
-                <div id="fourM" class="mainDiv" data-top-center="margin-left:0%" data-top-bottom="margin-left:-75%">
-                    <div class="spanner2M"></div>
-                    <img class="center" src="http://media.dpn.s3.amazonaws.com/30850_take_back_nighto.jpg" >
-                    <div class="dateC2"  data-anchor-target="#fourM" data-center-top="width:50%;" data-top-top="width:90%;"><p class="date2"> 1994</p></div>
-                    <div class="center2"> <h2 class='headingM'> 'Take Back the Night' First Held At Penn</h2> 
-                        <p class="bp">Students organized the first Take Back the Night demonstration on campus in 1994, which drew a crowd of over 200 to protest against sexual violence. Students first tried to hold Take Back the Night in 1989, but were unsuccessful due to hecklers. Throughout the 1990s, the event drew large crowds, but also some controversy — critics said the event excluded and antagonized men.</p></div>               
-                </div>
-            </div>
-
-
-            <div class='wrapperM' id='wrapper5M'>
-                <div id="fiveM" class="mainDiv" data-top-center="margin-left:0%" data-top-bottom="margin-left:75%">
-                    <div class="spanner1M"></div>
-                    <img class="center" src="http://media.dpn.s3.amazonaws.com/30840_takebackthenight952o.jpg"> 
-                    <div class="dateC1"  data-anchor-target="#fiveM" data-center-top="margin-left:50%;width:50%;" data-top-top="margin-left:5%;width:90%;" ><p class="date2">1995</p></div>
-                    <div class="center1"> <h2 class='headingM'>Man Apologizes for Rape at 'Take Back the Night'</h2> 
-                        <p class="bp">During the “speak-out” portion of Take Back the Night — where victims of sexual violence tell their stories — a man went up to the microphone to apologize for raping someone. Organizers condemned the action, calling it a misuse of the event and traumatizing for women trying to heal after being sexually assaulted. The event sparked several years of debate over how involved men should be at Take Back the Night.</p></div>
-                </div>
-            </div>
-
-            <div class='wrapperM' id='wrapper6M'>
-                <div id="sixM" class="mainDiv" data-top-center="margin-left:0%" data-top-bottom="margin-left:-75%">
-                    <div class="spanner2M"></div>
-                    <img class="center" src="http://media.dpn.s3.amazonaws.com/30848_april_1997_front_bwo.jpg" >
-                    <div class="dateC2"  data-anchor-target="#sixM" data-center-top="width:50%;" data-top-top="width:90%;"><p class="date2"> 1997</p></div>
-                    <div class="center2"> <h2 class='headingM'>Penn Sued Over Its Handling of Campus Rape</h2> 
-                        <p class="bp">In 1997, a former student sued Penn for allegedly covering up her rape three years earlier. The suit, which was settled out of court, claimed that she was raped in what is now called Harrison College House and that Penn Police did not provide her proper support. She also claimed that the University did not include the rape in the crime statistics it reported to the police and federal government — the 1994 crimes report said there were no rapes on campus that year.
-                            <br><br>However, a 1994 article in the Daily Pennsylvanian reported that a rape had occurred on the day the student claimed she was raped, even quoting Penn police officials referencing the incident. A later, unrelated Department of Education investigation faulted the University for not including a rape in its 1994 annual statistics.</p></div>               
-                </div>
-            </div>
-
-            <div class='wrapperM' id='wrapper7M'>
-                <div id="sevenM" class="mainDiv" data-top-center="margin-left:0%" data-top-bottom="margin-left:75%">
-                    <div class="spanner1M"></div>
-                    <img class="center"  src="http://media.dpn.s3.amazonaws.com/30849_tracy_macintosh_frontpage_bwo.jpg" >
-                    <div class="dateC1" data-anchor-target="#sevenM" data-center-top="margin-left:50%;width:50%;" data-top-top="margin-left:5%;width:90%;" ><p class="date2">2002</p></div>
-                    <div class="center1"> <h2 class='headingM'>Penn Professor Allegedly Rapes Woman in His Office</h2> 
-                        <p class="bp">Former neurosurgery professor Tracy McIntosh was sentenced to three and a half to seven years in prison in February 2008 for the sexual assault of his college roommate’s niece in his University office.
-                            <br><br>According to a Daily Pennsylvanian article, McIntosh took the then-23 year old woman out to several bars around campus in September 2002. After she began vomiting, the article said, he took her back to his office in Hayden Hall and had sex with her. She filed a complaint with the University two months later and alerted the police. He was charged with rape in May 2003.
-                            <br><br>The victim also filed suit with the University, claiming that McIntosh’s colleagues knew he had a history of using his position to harass women and that the University had hindered the investigation. The suit reached a confidential, out-of-court settlement.</p></div>
-                </div> 
-            </div>
-            <div class='wrapperM' id='wrapper8M'>
-                <div id="eightM" class="mainDiv" data-top-center="margin-left:0%" data-top-bottom="margin-left:-75%">
-                    <div class="spanner2M"></div>
-                    <img class="center"  src="http://i1357.photobucket.com/albums/q749/pongassist/stringof_zps64789a00.jpg" >
-                    <div class="dateC2" data-anchor-target="#eightM" data-center-top="width:50%;" data-top-top="width:90%;"><p class="date2"> 2009</p></div>
-                    <div class="center2"> <h2 class='headingM'>String of Rapes</h2> 
-                        <p class="bp">In fall 2009, a string of rapes reported on campus, including two in fraternity houses, forced the topic back to forefront of campus dialogue. Twice during that semester, student anti-violence groups hosted “speak-outs” at the Penn Women’s Center to encourage discussion about the incidents. 
-                            <br><br>“We really have a tragic opportunity with what’s happening to create some kind of momentum to make this a campus-wide issue that’s taken seriously,” Jason Pollack, then-College senior and president of all-male violence prevention group One in Four, said, according to a DP article about the speak-out.</p></div>               
-                </div>
-            </div>
-
-            <div class='wrapperM' id='wrapper9M'>
-                <div id="nineM" class="mainDiv">
-                    <div class="spanner1M"></div>
-                    <img class="center" src="http://i1357.photobucket.com/albums/q749/pongassist/PennWomensCenterFileName-DSC_0080NEFFileSize-22MB2327618bytesDateTaken-ThuOct220033-40-23AMImSaturationControl-N-AToneCompen_zpsb311d275.jpg" >
-                    <div class="dateC1"  data-anchor-target="#nineM" data-center-top="margin-left:50%;width:50%;" data-top-top="margin-left:5%;width:90%;" ><p class="date2">2013</p></div>
-                    <div class="center1"> <h2 class='headingM'>40th Anniversary of the Women's Center</h2>
-                        <p class="bp">This year, the Penn Women’s Center celebrates the 40th anniversary of its founding. While it initially did not have a building to itself, since 1996 it has occupied a prominent house on Locust Walk.
-                            <br><br>“We’re doing interviews right now as part of our 40th celebrations, and over and over our interviewees describe PWC as ‘home,’” Women’s Center Director Felicity Paxton said. “That’s really crucial. Advancing gender equity is important, serious and often hard work; it is vital for us to create a space that is welcoming and nurturing.”</p></div>
-                </div> 
-            </div>
-
-            <div id="endM" ><div id='topM'>RETURN TO TOP</div>
-            </div> 
-        </div>
-    </div> 
+        </div> 
+    </div>
 
 
 
@@ -171,7 +177,7 @@ and open the template in the editor.
 
     <div class="visible-sm visible-md visible-lg">
 
-        <div id='skrollr-body'>
+        <div id='skrollr-body2'>
             <div id="yearWrapper">
                 <div id="year"></div>
 
@@ -303,16 +309,17 @@ and open the template in the editor.
         </div>
     </div>
 
-    <div id="footer">
-        <div class="container">
-            <a href="http://www.thedp.com/"><img src = "img/dailypenn.png"></a>
-            <p id="footer-text" class = "text-center">Questions or comments can be directed to <a href="mailto:smith@thedp.com">Sarah Smith</a> and <a href="mailto:marble@thedp.com">Will Marble</a>.</p>
-            <p id="footer-text" class = "text-center">Website Development led by Matthew Weaver, with the assistance of Luke Carlson, Josh Karnofsky, Langston MacDiarmid, and Claudia Wynn.</p>
-            <p id="footer-text" class = "text-center">&#169; The Daily Pennsylvanian, 2013</p>
-        </div>
+   <div id="footer">
+      <div class="container">
+          <a href="http://www.thedp.com/"><img src = "img/dailypenn.png" alt="photo"></a>
+          <p id="footer-text1" class = "footer-text text-center">Questions or comments can be directed to <a href="mailto:smith@thedp.com">Sarah Smith</a> and <a href="mailto:marble@thedp.com">Will Marble</a>.</p>
+          <p id="footer-text2" class = "footer-text text-center">Website created by Matthew Weaver with Luke Carlson, Josh Karnofsky, Langston MacDiarmid, and Claudia Wynn.</p>
+          <p id="footer-text" class = "text-center">&#169; The Daily Pennsylvanian, 2013</p>
+      </div>
     </div>
 
 
+    
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/dropdown.js"></script>
@@ -323,7 +330,24 @@ and open the template in the editor.
     <script type="text/javascript" src="http://wtm.github.io/jquery.snapscroll/core/jquery.snapscroll.js"></script>
     <script type='text/javascript' src="js/timeline_final.js"></script>
     <script src="https://raw.github.com/twbs/bootstrap/master/js/transition.js"></script>
-</body>
+
+    <div class="visible-xs">
+    <script>
+       $(document).ready(function () {
+        //enables image if window too small
+        if ($(window).width() < 500) {;
+          $('.navbar-brand').css("position", "absolute");
+          $('.navbar-brand').css("left", "0px");
+          $('.navbar-brand').css("top", "auto");
+          $('.navbar-brand').css("bottom", "auto");
+          $('.navbar-brand img').css("max-width", "70%"); 
+          $('.navbar-brand a').css("padding", "0px");
+        }
+      });
+    </script>
+    </div>
+    
+    </body>
 </html>
 
 

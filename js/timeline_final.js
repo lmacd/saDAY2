@@ -10,7 +10,9 @@ $(document).ready(function() {
     $(' .wrapper, #intro').css({'height': hi + 'px'});
     $('#end,#endM').css({'height': hi / 4 + 'px'});
     var scale= (hi/680);
-    $('#skrollr-body').css({'font-size':16*scale+'px'});
+    
+    //should re-sizing be set for phone too?
+    $('#skrollr-body2').css({'font-size':16*scale+'px'});
 
     var year1 = $("#wrapper1").attr("title");
     var year2 = $("#wrapper2").attr("title");
@@ -99,13 +101,6 @@ $(document).ready(function() {
             var p = (year9 - 1970) / 45;
             $('#year').animate({'top': (p * 101) - 3 + '%'}, 700);
         }
-        
-     /*  else if((st / hi)==9.3)
-             {
-            var p = (year10 - 1970) / 45;
-            $('#year').animate({'top': (p * 101) - 3 + '%'}, 700);
-        }*/
-
     });
 
     $('#divs').snapscroll();

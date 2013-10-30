@@ -32,7 +32,9 @@ $(document).ready(function() {
     
     $(window).scroll(function() {
         var st = $(this).scrollTop();
-        if ((st / hi) < 1)
+        var pos=Math.round(st/hi);
+        
+        if ((st/hi) < 1)
         {
             $('#year').hide();
             $('.date').hide();
@@ -46,54 +48,63 @@ $(document).ready(function() {
             $('.date').show();
         }
         
-        if ((st / hi) === 1)
+        if (pos === 1)
         {
-
-            $('#year').animate({'top': 6.7 + '%'}, 700);
+            $('#year').css({'top': 6.7 + '%'}, 700);
         }
 
-        else if ((st / hi) === 2)
+        else if (pos === 2)
         {
-            $('#year').animate({'top': 26.9 + '%'}, 700);
+            $('#year').css({'top': 26.9 + '%'}, 700);
         }
 
-        else if ((st / hi) === 3)
+        else if (pos === 3)
         {
-            $('#year').animate({'top': 39 + '%'}, 700);
+            $('#year').css({'top': 39 + '%'}, 700);
+           
         }
 
-        else if ((st / hi) === 4)
+        else if (pos === 4)
         {
-            $('#year').animate({'top': 49.3 + '%'}, 700);
+            $('#year').css({'top': 49.3 + '%'}, 700);
+           
         }
 
-        else if ((st / hi) === 5)
+        else if (pos === 5)
         {
-            $('#year').animate({'top': 52 + '%'}, 700);
+            $('#year').css({'top': 52 + '%'}, 700);
         }
 
-        else if ((st / hi) === 6)
+        else if (pos === 6)
         {
-            $('#year').animate({'top': 56.5 + '%'}, 700);
+            $('#year').css({'top': 56.5 + '%'}, 700);
         }
 
-        else if ((st / hi) === 7)
+        else if (pos === 7)
         {
-            $('#year').animate({'top': 67.1 + '%'}, 700);
+            $('#year').css({'top': 67.1 + '%'}, 700);
         }
 
-        else if ((st / hi) === 8)
+        else if (pos === 8)
         {
-            $('#year').animate({'top': 79.8 + '%'}, 700);
+            $('#year').css({'top': 79.8 + '%'}, 700);
         }
 
-        else if ((st / hi) === 9)
+        else if (pos === 9)
         {
-            $('#year').animate({'top': 93.3 + '%'}, 700);
+            $('#year').css({'top': 93.3 + '%'}, 700);
         }        
+        
+        else if (pos>9)
+            {
+                        $('#year').css({'top': 93.3 + '%'}, 700);
+
+            }
     });
 
-    $('#divs').snapscroll();
+
+
+   // $('#divs').snapscroll();
 
     skrollr.init({
         forceHeight: false

@@ -15,7 +15,7 @@ $(document).ready(function() {
     $('#skrollr-body2, #skrollr-body').css({'font-size':16*scale+'px'});
 
     $("#top,#topM").click(function() {
-        setTimeout($(window).scrollTo('0%', 1000),100);
+        setTimeout($(window).scrollTo('0px', 1000),100);
         $('#year').css({'top': 0 + '%'});
     });
     
